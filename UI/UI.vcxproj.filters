@@ -38,5 +38,8 @@
     <ClInclude Include="include\fixedpoint\fixedpoint.hpp">
       <Filter>Fichiers d%27en-tête</Filter>
     </ClInclude>
+    <ClInclude Include="include\pluto\include.h">
+      <Filter>Fichiers d%27en-tête</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

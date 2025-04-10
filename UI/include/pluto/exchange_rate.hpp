@@ -14,10 +14,8 @@ namespace pluto {
         double rate_;
 
     public:
-        // Constructor: rate is conversion factor from `From` to `To`
         explicit exchange_rate(double rate) : rate_(rate) {}
 
-        // Convert a value of `From` to `To`
         To convert(const From& from_value) const {
             return To(static_cast<typename To::rep>(from_value.count() * rate_));
         }

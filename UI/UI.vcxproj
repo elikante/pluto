@@ -135,6 +135,7 @@
   <ItemGroup>
     <ClInclude Include="include\fixedpoint\fixedpoint.hpp" />
     <ClInclude Include="include\pluto\format.hpp" />
+    <ClInclude Include="include\pluto\include.h" />
     <ClInclude Include="include\pluto\money_point.hpp" />
     <ClInclude Include="include\pluto\talent.hpp" />
   </ItemGroup>
