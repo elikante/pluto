@@ -14,7 +14,7 @@
 
 namespace pluto {
     enum class Devise {
-        euro, usd, denarii, obols, shekel, ruble
+        euros, us_dollars, denarii, obols, shekels, rubles
     };
 
     template<typename T>
@@ -99,7 +99,7 @@ namespace pluto {
     using hemitetartemorion = impl::talent < Devise::obols/*, { "" }, { "hemitetartemorion" }*/, int64_t, std::ratio<1, 8 >>;
 
     // ─────────────────────────────────────────────────────────────
-    // Devise::denarii talents
+    // Roman talents
     // ─────────────────────────────────────────────────────────────
 
     using aureus = impl::talent < Devise::denarii/*, { "" }, { "aureus" }*/, int64_t, std::ratio<400 >>;
@@ -109,8 +109,8 @@ namespace pluto {
     using silver_quinarii = impl::talent < Devise::denarii/*, { "" }, { "silver_quinarii" }*/, int64_t, std::ratio<8 >>;
     using sestertii = impl::talent < Devise::denarii/*, { "" }, { "sertertii" }*/, int64_t, std::ratio<4 >>;
     using duopondii = impl::talent < Devise::denarii/*, { "" }, { "duopondii" }*/, int64_t, std::ratio<2 >>;
-    using assēs = impl::talent < Devise::denarii/*, { "" }, { "assēs" }*/, int64_t, std::ratio<1 >>; // a plural form of the Devise::denarii/* as 
-    using assarii = impl::talent < Devise::denarii/*, { "" }, { "assarii" }*/, int64_t, std::ratio<1 >>; // another plural form of the Devise::denarii/* as 
+    using assēs = impl::talent < Devise::denarii/*, { "" }, { "assēs" }*/, int64_t, std::ratio<1 >>; // a plural form of the roman as 
+    using assarii = impl::talent < Devise::denarii/*, { "" }, { "assarii" }*/, int64_t, std::ratio<1 >>; // another plural form of the roman as 
     using semis = impl::talent < Devise::denarii/*, { "" }, { "semis" }*/, int64_t, std::ratio<1, 2 >>;
     using triens = impl::talent < Devise::denarii/*, { "" }, { "triens" }*/, int64_t, std::ratio<1, 3 >>;
     using quadrans = impl::talent < Devise::denarii/*, { "" }, { "quadrans" }*/, int64_t, std::ratio<1, 4 >>;
@@ -160,7 +160,7 @@ namespace pluto {
     // 
     // ─────────────────────────────────────────────────────────────
 
-    using shekels = impl::talent < Devise::shekel/*, { "₪" }, { "shekel" }*/, int64_t, std::ratio<250 >>;
+    using shekels = impl::talent<Devise::shekel/*, { "₪" }, { "shekel" }*/, int64_t, std::ratio<1>>;
 
-    using rubles = impl::talent < Devise::ruble/*, { "₽" }, { "ruble" }*/, int64_t, std::ratio<250 >>;
+    using rubles = impl::talent<Devise::ruble/*, { "₽" }, { "ruble" }*/, int64_t, std::ratio<1>>;
 } // namespace pluto
