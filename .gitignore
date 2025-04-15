@@ -17,7 +17,7 @@
 mono_crash.*
 
 # Build results
-[Dd]ebug/
+[Dd]ebug/ 
 [Dd]ebugPublic/
 [Rr]elease/
 [Rr]eleases/
@@ -364,3 +364,6 @@ FodyWeavers.xsd
 /UI/ConsoleApplication1.vcxproj
 /UI/ConsoleApplication1.vcxproj.filters
 /pluto.sln
+/.gitignore
+/.gitattributes
+/.gitignore
